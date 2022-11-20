@@ -1,0 +1,72 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title>BMP2ASC Tool</title>
+</head>
+<body link="#0000FF">
+
+<center><b><font size="+2">BMP2ASC Tool</font></b></center>
+
+<p><font size="-1">Why?</font>
+<p><font size="-1">This tool is used to import company or regulatory logos,
+or other graphical elements into the PADs database. These images can then
+be placed on the silkscreen, or any other layer.</font>
+<p><font size="-1">How?</font>
+<p><font size="-1">This tool will scan a windows BMP (two color only) file
+and convert it into a PADs .ASC file format. This file can then be imported
+into the design database. In scanning the BMP file, a left to right, top
+to bottom approach is used. Each continuous group of white pixels is translated
+into a single line segment in the ASC file.</font>
+<p><font size="-1">What is the best method to use?</font>
+<p><font size="-1">Any two color, black and white BMP file can be converted.
+However, for best results, please use the following method (we&#146;ll talk
+in Mils, and try to show examples):</font>
+<p><font size="-1">First, determine the size of the area on the PCB for the
+picture:</font>
+<p><img SRC="../BMP2ASC/image6.gif" height="388" width="579">
+<p><font size="-1">This image size is 1600x800 (Quite large, actually. Most
+areas for logos will be much smaller).</font>
+<p><font size="-1">Next, find the picture that you want to put in that area.
+If you have a graphic designer generating the image, tell him/her to create
+it using half the area measured (800x400), and to use only white and black
+(dithering and colors don&#146;t look good when translated to silkscreen). We&#146;ll
+use a picture with some text:</font>
+<p><img SRC="../BMP2ASC/image7.gif" height="200" width="400">
+<p><font size="-1">I would like to take this time to plug my favorite tool
+for the graphical work: PaintShop Pro. You can get it from <a href="http://www.jasc.com/">http://www.jasc.com/</a>.
+This is a useful tool for grabbing images from the screen, converting them
+to black and white, scaling them to fit and saving them in windows bitmap
+format.</font>
+<p><font size="-1">Once this bit map is saved in 2 color mode, we run the
+program with the following arguments (assuming the program and the bit
+map are in the same directory):</font>
+<p><tt><font size="+1">BMP2ASC input.bmp output.asc 2 26 0 0</font></tt>
+<p><font size="-1">This will scan the data and convert it to horizontal lines
+2 mils wide. These lines will be placed on layer 26 (silkscreen top), and
+the lower left-hand corner of the image will be at 0,0.</font>
+<p><font size="-1">Next open up a new PADs file, and import the ASC file.
+Be sure to set the color and the minimum display width:</font>
+<p><img SRC="../BMP2ASC/image8.gif" height="496" width="418">
+<p><img SRC="../BMP2ASC/image9.gif" height="473" width="548">
+<p><font size="-1">Select the complete item, and then combine it. This may
+take a while for complex images. Once complete, select save to library
+from the mouse right-click menu.</font>
+<p><font size="-1">You can now past it in to existing designs using the paste
+from library button bar:</font>
+<p><img SRC="../BMP2ASC/image10.gif" height="402" width="622">
+<p><font size="-1">And, the final results:</font>
+<p><img SRC="../BMP2ASC/image11.gif" height="353" width="521">
+<br>&nbsp;
+<p><font size="-1"></font><a href="bmp2asc.exe">Click to download bmp2asc.exe</a>
+<br>&nbsp;
+<p><font size="-1">Please distribute this to any one you think may find it
+useful. If you find it useful, please send me an email, just to let me
+know (I can then send updates, if you would like). I cannot guarantee any
+support, but if you have problems, need help or want to suggest improvements,
+let me know.</font>
+<p><font size="-1">Regards,</font>
+<p><font size="-1">James Tidman</font>
+<p><font size="-1">Mail :</font><a href="mailto:jtidman@flash.net">jtidman@flash.net</a>
+</body>
+</html>
