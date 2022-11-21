@@ -1,7 +1,9 @@
 # bmp2asc
 
-Work in progress
+I wrote this utility back in 1998, releasing on the web in 1999.  It was orginally hosted on flash.net, and basically disappeared when that copmny went under.  It did however live on in many user groups and was used by many thousands of board designers.  My understanding is that windows 7 made the original binary difficult to run, and it use started to fade after that.  Someone wrote a version in basic that would run inside the layout tool at some point.
+Anyway, I ran across the original code on an old hard drive and thought I would post it here.  Below is the (slightly modified) web page I set up (running on a server in my closet) back in 1999.  Enjoy!
 
+----
 
 Why?
 
