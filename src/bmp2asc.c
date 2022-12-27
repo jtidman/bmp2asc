@@ -5,7 +5,7 @@
 
    Last Known Address:
    
-		jtidman@@austin.rr.com
+		bmp2asc@tidmanfamily.com
 
    Created:
    	04/15/99 - JT
